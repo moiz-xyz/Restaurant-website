@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #D90414;
+    color: white;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo {
+    margin: 0;
+    font-family: "Lobster", serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffbe0b;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #f19c1b;
+}
+
+.cart-button {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cart-button .icon{
+    color: #ffbe0b;
+    font-size: 1.5rem;
+}
+/* .cart-button .icon:hover {
+    background-color: #f19c1b;
+} */
+
+.icon {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        margin: 0.5rem 0;
+    }
+}
