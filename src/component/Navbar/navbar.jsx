@@ -1,6 +1,7 @@
 // Navbar.js
 import React from 'react';
 import './Navbar.css';
+
 import { FaMapMarkerAlt, FaPhone, FaExclamationTriangle, FaShoppingCart } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -20,7 +21,9 @@ const Navbar = () => {
 
       {/* Center Section - Logo */}
       <div className="navbar-center">
+
         <h1 className="logo">Gevini Foods</h1>
+
       </div>
 
       {/* Right Section */}
@@ -36,5 +39,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;
